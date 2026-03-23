@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QuantRadar | Research faster. Risk less.</title>
-  <meta name="description" content="QuantRadar is an AI-powered research and risk operating system for self-directed traders, research teams, and advisors.">
+  <title>QuantRadar | The market changes. Your workspace should too.</title>
+  <meta name="description" content="QuantRadar is a dynamic market decision system that reorganizes research, risk, and reporting around the state of the market and your positions.">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
           <span data-config-text="brandName">QuantRadar</span>
         </a>
         <nav class="nav-links">
-          <a href="#workflow">Workflow</a>
+          <a href="#decision-surface">Surface</a>
           <a href="#sample">Sample</a>
           <a href="#pricing">Pricing</a>
           <a data-link="startFreeUrl" href="./app.html">App</a>
@@ -28,28 +28,29 @@
     <main>
       <section class="hero-block container">
         <div class="hero-copy card card-hero">
-          <p class="eyebrow">AI research and risk operating system</p>
-          <h1>Research faster. Risk less.</h1>
+          <p class="eyebrow">Dynamic market decision system</p>
+          <h1>The market changes. Your workspace should too.</h1>
           <p class="hero-text">
-            QuantRadar turns market scanning, multi-timeframe analysis, portfolio monitoring,
-            and report-grade output into one repeatable workflow for active traders.
+            QuantRadar is not a static dashboard and not another market chatbot.
+            It reorganizes your research, risk view, watchlist priorities, and next actions
+            around what is happening now: pre-market, in-position, event shock, or review mode.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" data-link="startFreeUrl" href="#waitlist">Start Free</a>
+            <a class="button button-primary" href="#waitlist">Request Pilot Access</a>
             <a class="button button-secondary" data-link="samplePageUrl" href="./sample.html">See Sample</a>
           </div>
           <div class="hero-strip">
             <div>
-              <span>Scanner</span>
-              <strong>Daily shortlist</strong>
+              <span>Pre-market</span>
+              <strong>Build the agenda before the open</strong>
             </div>
             <div>
-              <span>Monitor</span>
-              <strong>Key-level discipline</strong>
+              <span>In position</span>
+              <strong>See risk before the market takes it</strong>
             </div>
             <div>
-              <span>Export</span>
-              <strong>HTML and PDF notes</strong>
+              <span>Event shock</span>
+              <strong>Switch to the right mode when volatility hits</strong>
             </div>
           </div>
         </div>
@@ -57,44 +58,129 @@
         <aside class="hero-side card">
           <div class="stat-stack">
             <div class="stat-card">
-              <span>For traders</span>
-              <strong>Scan, analyze, and manage risk in one loop.</strong>
+              <span>Dynamic surface</span>
+              <strong>The same product shows a different interface when the state changes.</strong>
             </div>
             <div class="stat-card">
-              <span>For teams</span>
-              <strong>Standardize your note-taking and external-facing output.</strong>
+              <span>Decision engine</span>
+              <strong>Start with what matters now, not a fixed set of tabs and menus.</strong>
             </div>
             <div class="stat-card">
-              <span>For advisors</span>
-              <strong>Use white-label reports instead of chat screenshots and ad hoc decks.</strong>
+              <span>Report layer</span>
+              <strong>When needed, export polished HTML and PDF output without leaving the loop.</strong>
             </div>
           </div>
         </aside>
+      </section>
+
+      <section class="section container" id="decision-surface">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Decision surface</p>
+            <h2>One system. Four live operating modes.</h2>
+          </div>
+          <p class="section-copy">
+            This is the core idea: the interface should not stay fixed while the market,
+            the portfolio, and the task are changing. QuantRadar shifts emphasis,
+            workflow, and action mapping as your context changes.
+          </p>
+        </div>
+        <div class="surface-layout">
+          <article class="card surface-preview">
+            <div class="mode-switch" role="tablist" aria-label="Decision surface modes">
+              <button class="mode-pill is-active" type="button" data-mode="premarket">Pre-Market</button>
+              <button class="mode-pill" type="button" data-mode="position">Position Defense</button>
+              <button class="mode-pill" type="button" data-mode="event">Event Shock</button>
+              <button class="mode-pill" type="button" data-mode="review">Post-Market Review</button>
+            </div>
+
+            <div class="surface-frame">
+              <div class="surface-head">
+                <div>
+                  <p class="eyebrow" id="surface-mode-label">Pre-Market Mode</p>
+                  <h3 id="surface-title">Open with the names that deserve your attention first.</h3>
+                </div>
+                <span class="status-pill status-pill-hot" id="surface-state-pill">Priority Queue Live</span>
+              </div>
+              <p class="section-copy" id="surface-summary">
+                Before the open, the product compresses your watchlist into a ranked agenda,
+                so you do not spend the first hour rebuilding context.
+              </p>
+
+              <div class="surface-grid">
+                <article class="surface-card">
+                  <span>Primary focus</span>
+                  <strong id="surface-focus">Priority setups and opening game plan</strong>
+                </article>
+                <article class="surface-card">
+                  <span>What changed</span>
+                  <strong id="surface-change">Gap risk, overnight context, and regime tone</strong>
+                </article>
+                <article class="surface-card surface-card-list">
+                  <span>Next actions</span>
+                  <ul class="list-clean surface-list" id="surface-actions">
+                    <li>Rank the watchlist by urgency and structure.</li>
+                    <li>Separate breakouts from names that need more time.</li>
+                    <li>Map the first decision window before the open.</li>
+                  </ul>
+                </article>
+                <article class="surface-card">
+                  <span>Ignore for now</span>
+                  <strong id="surface-ignore">Long post-close reporting and low-priority names</strong>
+                </article>
+              </div>
+            </div>
+          </article>
+
+          <article class="card surface-copy-card">
+            <p class="eyebrow">Why this sells</p>
+            <h3>Users do not pay for more tabs. They pay for better decision timing.</h3>
+            <p class="section-copy">
+              A static market app makes the user reconstruct context every time. A dynamic system
+              changes the interface because the state has changed. That saves attention, reduces
+              missed signals, and makes the product feel like a real operating surface instead of
+              a tool shelf.
+            </p>
+            <ul class="list-clean">
+              <li>Different workflow before the open, during a position, during volatility, and after the close</li>
+              <li>One workspace for discovery, sizing, monitoring, and report output</li>
+              <li>A clearer upgrade path from solo trader to portfolio workflow to desk product</li>
+            </ul>
+            <div class="hero-actions compact-actions">
+              <a class="button button-primary" data-link="startFreeUrl" href="./app.html">View Beta Access</a>
+              <a class="button button-secondary" href="#pricing">See Plans</a>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="section container" id="proof">
         <div class="section-head compact">
           <div>
             <p class="eyebrow">Core promise</p>
-            <h2>Not another market chatbot.</h2>
+            <h2>A workspace that changes with the market.</h2>
           </div>
           <p class="section-copy">
-            The value is the full operating loop: discovery, analysis, position monitoring,
-            action mapping, and polished external-facing reports.
+            The value is not the chat. The value is the loop: know what matters now,
+            know what changed, know what to do next, and keep that logic visible.
           </p>
         </div>
         <div class="proof-grid">
           <article class="proof-card card">
-            <h3>Find better setups</h3>
-            <p>Use regime-aware screening and cleaner filtering before you sink time into a name.</p>
+            <h3>Shift with the session</h3>
+            <p>The product behaves differently before the open, during live risk, and after the close.</p>
           </article>
           <article class="proof-card card">
-            <h3>Manage open risk</h3>
-            <p>Keep support, resistance, trim levels, and break-even in one visible trade map.</p>
+            <h3>Surface the next decision</h3>
+            <p>Instead of static menus, the workspace brings the highest-priority action to the front.</p>
           </article>
           <article class="proof-card card">
-            <h3>Share professional output</h3>
-            <p>Generate HTML and PDF memos that look intentional, not pasted together.</p>
+            <h3>Keep risk in the same loop</h3>
+            <p>Setups, position sizing, live risk, and reporting live in one operating surface.</p>
+          </article>
+          <article class="proof-card card">
+            <h3>Export when it matters</h3>
+            <p>Reports stay available as a delivery layer, instead of replacing the decision layer.</p>
           </article>
         </div>
       </section>
@@ -168,11 +254,11 @@
         <div class="section-head">
           <div>
             <p class="eyebrow">Pricing</p>
-            <h2>Simple pricing for serious market research.</h2>
+            <h2>Buy the operating layer you actually need.</h2>
           </div>
           <p class="section-copy">
-            Start with single-name research. Upgrade when you need watchlist coverage,
-            position monitoring, and shareable external-facing output.
+            Start with the workspace. Upgrade when you need a deeper watchlist,
+            portfolio command, and a more complete decision loop.
           </p>
         </div>
         <div class="pricing-grid">
@@ -187,9 +273,11 @@
             <div class="price">$0</div>
             <ul class="list-clean">
               <li>3 analyses per day</li>
-              <li>Single-name research</li>
-              <li>Limited scanner view</li>
-              <li>No portfolio monitoring</li>
+              <li>Trial workspace with saved history</li>
+              <li>Watchlist up to 5 tickers</li>
+              <li>Watchlist-based daily brief</li>
+              <li>Single-name research and one report/day</li>
+              <li>No portfolio command center</li>
             </ul>
             <a class="button button-secondary full" data-link="startFreeUrl" href="#waitlist">Start Free</a>
           </article>
@@ -204,8 +292,10 @@
             <div class="price">$29<span>/month</span></div>
             <ul class="list-clean">
               <li>30 analyses per day</li>
-              <li>Full multi-timeframe workflow</li>
-              <li>Daily scanner shortlist</li>
+              <li>Saved workspace and analysis history</li>
+              <li>Watchlist up to 30 tickers</li>
+              <li>Daily brief + priority setup queue</li>
+              <li>Full ticker workbench + reports</li>
               <li>HTML and PDF exports</li>
             </ul>
             <a class="button button-primary full" data-link="proCheckoutUrl" data-checkout-plan="pro" href="https://buy.stripe.com/aFa8wJ7w6fSAcpv6XXe7m00">Choose Pro</a>
@@ -221,8 +311,10 @@
             <div class="price">$99<span>/month</span></div>
             <ul class="list-clean">
               <li>Everything in Pro</li>
+              <li>Portfolio command center access</li>
               <li>Position tracking and exit monitoring</li>
-              <li>Weekly portfolio memo</li>
+              <li>Self-serve Stripe billing portal</li>
+              <li>Expanded watchlist and saved operating history</li>
               <li>Priority report generation</li>
             </ul>
             <a class="button button-secondary full" data-link="portfolioCheckoutUrl" data-checkout-plan="portfolio-pro" href="https://buy.stripe.com/5kQ5kx8Aa5dWgFL4PPe7m01">Choose Portfolio Pro</a>
@@ -238,6 +330,7 @@
             <div class="price">Custom</div>
             <ul class="list-clean">
               <li>Multi-user research workflow</li>
+              <li>Higher limits and shared watchlists</li>
               <li>Branded reports and exports</li>
               <li>Client-facing memo layer</li>
               <li>Priority setup and support</li>
@@ -259,7 +352,7 @@
           </article>
           <article class="card faq-card">
             <h3>Can this run as a real app now?</h3>
-            <p>Yes. The marketing site stays simple, and the FastAPI shell behind <code>app.html</code> can already generate live reports from your existing analysis engine.</p>
+            <p>Yes. The app shell now supports workspaces, watchlists, recent activity, plan-gated usage, ticker workbench, and a portfolio command center on top of your existing analysis engine.</p>
           </article>
         </div>
       </section>
@@ -267,16 +360,17 @@
       <section class="section container" id="waitlist">
         <div class="waitlist-layout">
           <div class="card waitlist-copy">
-            <p class="eyebrow">Launch surface</p>
-            <h2>Wire your launch flow without changing the layout.</h2>
+            <p class="eyebrow">Pilot access</p>
+            <h2>Apply for the first serious-user cohort.</h2>
             <p class="section-copy">
-              The form below now posts into your own FastAPI backend and writes leads into <code>site_state/waitlist_submissions.jsonl</code>.
-              If the API is unavailable, it still falls back to your company email.
+              Use this for traders, research teams, or advisors who want a working decision surface
+              instead of another static research stack. The form posts into your FastAPI backend and
+              still falls back to email if the endpoint is unavailable.
             </p>
             <div class="config-hints">
-              <span>Server-backed waitlist</span>
+              <span>Server-backed lead capture</span>
               <span>Email fallback</span>
-              <span>Stripe-ready checkout</span>
+              <span>Stripe-ready conversion path</span>
             </div>
           </div>
           <form class="card waitlist-form" id="waitlist-form">
@@ -298,10 +392,10 @@
             </label>
             <label>
               <span>Message</span>
-              <textarea name="message" rows="4" placeholder="What do you want this to replace?"></textarea>
+              <textarea name="message" rows="4" placeholder="What should this replace in your current workflow?"></textarea>
             </label>
-            <button class="button button-primary full" type="submit">Join Waitlist</button>
-            <p class="form-note" id="form-note">Submissions now post to your own backend. If that endpoint is down, the form falls back to your company email.</p>
+            <button class="button button-primary full" type="submit">Request Pilot Access</button>
+            <p class="form-note" id="form-note">Submissions post into your backend. If that endpoint is down, the form falls back to your company email.</p>
           </form>
         </div>
       </section>

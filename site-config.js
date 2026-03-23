@@ -1,7 +1,7 @@
 window.SITE_CONFIG = {
   brandName: "QuantRadar",
-  siteUrl: "https://alexaliao001.github.io/quantradar-site/",
-  startFreeUrl: "./index.html#waitlist",
+  siteUrl: "https://www.quantradar.one/",
+  startFreeUrl: "./app.html",
   samplePageUrl: "./sample.html",
   sampleReportHtml: "./reports/sample-site-current/report.html",
   sampleReportPdf: "./reports/sample-site-current/report.pdf",
@@ -12,7 +12,7 @@ window.SITE_CONFIG = {
   checkoutCancelUrl: "./checkout-cancel.html",
   deskContactUrl: "mailto:fortuneinsight@outlook.com?subject=QuantRadar%20Desk%20Plan%20Inquiry",
   contactMailto: "mailto:fortuneinsight@outlook.com?subject=QuantRadar%20Launch%20Inquiry",
-  xUrl: "https://alexaliao001.github.io/quantradar-site/",
+  xUrl: "https://www.quantradar.one/",
   waitlistEndpoint: "",
   waitlistMethod: "POST"
 };
